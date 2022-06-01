@@ -7,6 +7,13 @@ But we need this guide RIGHT NOW!
 
 So there we go. The bash script does the thing. It uses a gpt utility instead of an old one apt-key. To install Spotify Client you can copy code below or use bash script called install.sh in the repository.
 
+## Install Spotify Client via Bash Script
+
+```console
+git clone https://github.com/Kup1o/spotify-installer.git
+bash ./spotify-installer/install.sh
+```
+
 ## Install Spotify Client via Snap
 
 ```console
