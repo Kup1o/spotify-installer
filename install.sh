@@ -1,8 +1,8 @@
 #!/bin/bash
 
-echo -en "Write a number to choose an option for install Spotify Client"
-echo -en "If you would like to install Spotify via Snap, write 1"
-echo -en "If you would like to install Spotify via Apt, write 2"
+echo -en "Write a number to choose an option for install Spotify Client\n"
+echo -en "If you would like to install Spotify via Snap, write 1\n"
+echo -en "If you would like to install Spotify via Apt, write 2: "
 read method
 
 while [-n $method] do
