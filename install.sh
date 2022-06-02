@@ -9,7 +9,7 @@ while [-n $method] do
 
 case $method in 
   "1")
-    if [$(method)==1] then
+    if [$(method)==1]; then
       echo -e 'You have chosen snap method to install Spotify Client'
       sudo snap install spotify
     break
@@ -20,7 +20,7 @@ case $method in
     exit
     fi;;
   "2")
-    if [$(method)==2] then
+    if [$(method)==2]; then
       echo -e 'You have chosen repository method to install Spotify Client'
       sudo curl -fsSLo /usr/share/keyrings/spotify.gpg https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg
       echo "deb [signed-by=/usr/share/keyrings/spotify.gpg arch=amd64] http://repository.spotify.com stable non-free"|sudo tee /etc/apt/sources.list.d/spotify.list
