@@ -5,7 +5,7 @@ echo -en "If you would like to install Spotify via Snap, write 1\n"
 echo -en "If you would like to install Spotify via Apt, write 2: "
 read method
 
-while [-n $method] do
+while [-n $method]; do
 
 case $method in 
   "1")
