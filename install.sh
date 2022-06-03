@@ -12,13 +12,13 @@ case $method in
     if ["$method" == 1]; then
       echo -e "You have chosen snap method to install Spotify Client"
       sudo snap install spotify
-      echo -e "Spotify was succesfully installed!"
+      return echo -e "Spotify was succesfully installed!"
     break
     else
       echo -en "Please specify 1 or 2 for choosing a method to install Spotify Client\n"
       echo -en "If you would like to install Spotify via Snap, write 1\n"
       echo -en "If you would like to install Spotify via Apt, write 2\n"
-      echo -en "Now run install.sh again!\n"
+      return echo -en "Now run install.sh again!\n"
     exit
     fi;;
   "2")
@@ -29,13 +29,13 @@ case $method in
       sudo apt update
       sudo apt install spotify-client -y
       clear
-      echo -e "Spotify was succesfully installed!\n"
+      return echo -e "Spotify was succesfully installed!\n"
     break
     else
       echo -en "Please specify 1 or 2 for choosing a method to install Spotify Client\n"
       echo -en "If you would like to install Spotify via Snap, write 1\n"
       echo -en "If you would like to install Spotify via Apt, write 2\n"
-      echo -en "Now run install.sh again!\n"
+      return echo -en "Now run install.sh again!\n"
     exit
     fi
     break;;
